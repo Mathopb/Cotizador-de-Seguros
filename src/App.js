@@ -46,7 +46,9 @@ function App() {
           guardarCargando={guardarCargando}
         />
 
-        {cargando ? <Spinner /> : null}
+        <div className="spinnerContainer">
+          {cargando ? <Spinner /> : null}
+        </div>
 
         <Resumen
           datos={datos}

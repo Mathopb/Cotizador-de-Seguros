@@ -1,9 +1,8 @@
 html {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
   background: #e96443; /* fallback for old browsers */
@@ -41,4 +40,12 @@ span.resultado {
 .resultado-exit-active {
   opacity: 0;
   transform: translateY(-10%);
+}
+
+.spinnerContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
